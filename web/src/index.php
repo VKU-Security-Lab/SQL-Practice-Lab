@@ -12,7 +12,7 @@ if(!isset($_SESSION['currentLevel'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phòng thí nghiệm SQL</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
@@ -53,7 +53,7 @@ if(!isset($_SESSION['currentLevel'])){
         </p>
         </p>
     </div>
-    <a href="./challenge/challenge1.php">Bắt đầu</a>
+    <a href="/challenge/challenge1.php">Bắt đầu</a>
 </body>
 
 </html>

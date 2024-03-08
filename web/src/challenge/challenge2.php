@@ -4,7 +4,7 @@ if (!isset($_SESSION['currentLevel']) || $_SESSION['currentLevel'] < 2) {
     die("Hãy qua thử thách " . $_SESSION['currentLevel'] . " trước <a href='challenge".$_SESSION['currentLevel'].".php'>tại đây</a>");
 }
 
-include_once('../connect.php');
+include_once('connect.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $query = $_POST["query"];
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SQL Lab - Challenge 2</title>
-    <link rel="stylesheet" href="./../assets/css/style-chall.css">
+    <link rel="stylesheet" href="/assets/css/style-chall.css">
 
 </head>
 
@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </table>
         </div>
     <?php endif; ?>
-    <script src="./../assets/js/ajax.js"></script>
+    <script src="/assets/js/ajax.js"></script>
     <script>
         $(document).ready(function() {
             $("#formFlag").submit(function(e) {

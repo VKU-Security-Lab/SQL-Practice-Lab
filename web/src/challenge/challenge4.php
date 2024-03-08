@@ -3,7 +3,7 @@ session_start();
 if (!isset($_SESSION['currentLevel']) || $_SESSION['currentLevel'] < 4) {
     die("Hãy qua thử thách " . $_SESSION['currentLevel'] . " trước <a href='challenge" . $_SESSION['currentLevel'] . ".php'>tại đây</a>");
 }
-include_once('../connect.php');
+include_once('connect.php');
 $flag = "VSL{insert_is_not_hard_for_me}";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SQL Lab - Challenge 3</title>
-    <link rel="stylesheet" href="./../assets/css/style-chall.css">
+    <link rel="stylesheet" href="/assets/css/style-chall.css">
 
 </head>
 
@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </table>
         </div>
     <?php endif; ?>
-    <script src="./../assets/js/ajax.js"></script>
+    <script src="/assets/js/ajax.js"></script>
     <script>
         $(document).ready(function() {
             $("#formFlag").submit(function(e) {
